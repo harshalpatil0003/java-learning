@@ -1,2 +1,13 @@
 *.class
 *.bak
+/.metadata/
+.settings
+.project
+.gitignore
+.classpath
+*.log
+*.tmp
+*.swp
+*.swo
+*.swn
+module-info.java
