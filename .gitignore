@@ -6,8 +6,4 @@
 .gitignore
 .classpath
 *.log
-*.tmp
-*.swp
-*.swo
-*.swn
 module-info.java
