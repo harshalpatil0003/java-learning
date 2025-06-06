@@ -25,6 +25,7 @@ public class BankAccount {
 		System.out.println("Name: "+Name);
 		System.out.println("Bank: "+BankName);
 		System.out.println("IFSC :"+Ifsc);
+		System.out.println("Branch: "+Branch);
 		System.out.println("Account No: "+AccNo);	
 		System.out.println("Phone No: "+Phone);
 	}	

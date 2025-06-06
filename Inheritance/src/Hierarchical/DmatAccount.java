@@ -11,14 +11,8 @@ public class DmatAccount extends BankAccount {
 		// TODO Auto-generated constructor stub
 	}
 
-	public DmatAccount(String Name, String BankName, String Ifsc, String Branch, long AccNo,
-			 long Phone,double balance,float brokerage,double holdings,long id) {
-		this.Name=Name;
-		this.BankName=BankName;
-		this.Ifsc=Ifsc;
-		this.Branch =Branch;
-		this.AccNo=AccNo;
-		this.Phone=Phone;
+	public DmatAccount(double balance,float brokerage,double holdings,long id) {
+	
 		
 		this.balance=balance;
 		this.brokerage=brokerage;

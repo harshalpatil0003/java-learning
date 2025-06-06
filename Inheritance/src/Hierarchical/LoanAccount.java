@@ -11,15 +11,8 @@ public class LoanAccount extends BankAccount {
 		// TODO Auto-generated constructor stub
 	}
 
-	public LoanAccount(String Name, String BankName, String Ifsc, String Branch,
-			long AccNo, long Phone,double loanAmt,float loanInterest, int period,String loanType ) {
-		this.Name=Name;
-		this.BankName=BankName;
-		this.Ifsc=Ifsc;
-		this.Branch =Branch;
-		this.AccNo=AccNo;
-		this.Phone=Phone;
-		
+	public LoanAccount(double loanAmt,float loanInterest, int period,String loanType ) {
+	
 		this.loanAmt=loanAmt;
 		this.loanInterest=loanInterest;
 		this.period=period;
