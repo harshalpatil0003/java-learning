@@ -11,8 +11,9 @@ public class LoanAccount extends BankAccount {
 		// TODO Auto-generated constructor stub
 	}
 
-	public LoanAccount(double loanAmt,float loanInterest, int period,String loanType ) {
-	
+	public LoanAccount(String Name,String BankName,String Ifsc,String Branch,long AccNo,int pin,long Phone,double loanAmt,float loanInterest, int period,String loanType ) {
+		super(Name, BankName, Ifsc, Branch, AccNo, pin, Phone);
+		// Constructor binding with super call statement.
 		this.loanAmt=loanAmt;
 		this.loanInterest=loanInterest;
 		this.period=period;

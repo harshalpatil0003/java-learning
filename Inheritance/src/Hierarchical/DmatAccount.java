@@ -11,13 +11,16 @@ public class DmatAccount extends BankAccount {
 		// TODO Auto-generated constructor stub
 	}
 
-	public DmatAccount(double balance,float brokerage,double holdings,long id) {
-	
+	public DmatAccount(String Name,String BankName,String Ifsc,String Branch,long AccNo,
+			int pin,long Phone,double balance,float brokerage,double holdings,long id) {
 		
+		super(Name, BankName, Ifsc, Branch, AccNo, pin, Phone);
+		// Constructor binding with super call statement.
 		this.balance=balance;
 		this.brokerage=brokerage;
 		this.holdings=holdings;
 		this.id=id;
+	
 	}
 	public void displayDmatAccount() {
 		System.out.println("--------DMAT ACCOUNT--------");
