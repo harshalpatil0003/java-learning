@@ -2,8 +2,6 @@ package Shapes;
 
 public class Perimeter extends Shapes {
 	
-	static float area;
-	static float perimeter;
 	public void rectangle(float len, float bred) {
 		System.out.println("----------  RECTANGLE  ---------");
 		System.out.println("Area of Rectangle: "+(len*bred));
