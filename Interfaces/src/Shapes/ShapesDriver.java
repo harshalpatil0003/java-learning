@@ -1,4 +1,4 @@
-package Interfaces;
+package Shapes;
 
 public class ShapesDriver {
 public static void main(String[] args) {
