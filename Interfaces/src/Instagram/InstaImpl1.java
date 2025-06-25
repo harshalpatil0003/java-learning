@@ -1,14 +1,8 @@
-package Instagram;
 
-public class InstaIml1 implements Insta{
+package Instagram;
+public abstract class InstaImpl1 implements Insta{
 	String user;
 	String pass;
-	public void login(String user,String pass) {
-		System.out.print("Enter Username: "+user);
-		System.out.println("Enter Password: "+pass);
-	}
-	
-	
 	
 	public void post(String post, String user) {
 		System.out.println(post);
@@ -24,4 +18,6 @@ public class InstaIml1 implements Insta{
 		System.out.println(name+" Commented 💬");
 		System.out.println("------------------------");
 	}
+	public abstract void story(String story , String user);
+	public abstract void message(String msg,String name);
 }
