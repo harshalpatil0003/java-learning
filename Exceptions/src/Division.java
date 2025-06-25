@@ -16,8 +16,6 @@ public class Division {
 			System.out.println(ref);
 			System.out.println("Cannot divide by Zero! ");
 		}
-		
-		
-		
+		sc.close();
 	}
 }
