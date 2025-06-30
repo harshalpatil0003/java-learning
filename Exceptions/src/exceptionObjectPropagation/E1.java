@@ -1,6 +1,4 @@
-package finallyblock;
-
-import java.util.Scanner;
+package exceptionObjectPropagation;
 
 public class E1 {
 
