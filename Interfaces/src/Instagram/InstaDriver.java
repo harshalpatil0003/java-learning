@@ -3,7 +3,7 @@ package Instagram;
 public class InstaDriver {
 
 	public static void main(String[] args) {
-		Object
+		
 		Insta i1=new InstaImpl2();
 		i1.post("Too Good To Be True! ❤️❤️", "harshal");
 		

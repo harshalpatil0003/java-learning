@@ -63,7 +63,7 @@ public class Student {
 	public void setBranch(String institute,String name, String newbranch) {
 		if (this.name.equals(name) && this.institute.equals(institute)) {
 			this.branch = newbranch;
-			System.out.println("Branch is changed to "+branh);
+			System.out.println("Branch is changed to "+branch);
 		}
 		else {
 			System.out.println("Invalid name or institute");

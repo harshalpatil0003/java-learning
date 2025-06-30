@@ -1,4 +1,5 @@
 
+
 package Instagram;
 public abstract class InstaImpl1 implements Insta{
 	String user;
