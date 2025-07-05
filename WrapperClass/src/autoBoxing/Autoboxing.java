@@ -8,6 +8,10 @@ public static void main(String[] args) {
 	int a=a1;  	      // auto-unboxing
 	System.out.println(a);
 	
+	Float f1=65.63f;  //autoboxing
+	float f=f1;       //auto-unboxing
+	System.out.println(f);
+	
 	Character c1='P';  //autoboxing
 	char c=c1;		   //auto-unboxing
 	System.out.println(c);
