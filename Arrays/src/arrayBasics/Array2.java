@@ -18,7 +18,6 @@ public class Array2 {
 			System.out.println(arr[i]);
 		}
 		
-		
 		String[] name= new String[4];
 		
 		name[0]="Harshal";
