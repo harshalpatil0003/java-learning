@@ -13,9 +13,9 @@ public class ReverseArray{
 	public static int[] reverse(int[] arr) {
 		
 		int[] ans=new int[arr.length];
-		for (int i = arr.length-1; i >=0; i--) {
-			//ans[i]=(arr[i]);
-			System.out.println(arr[i]);
+		for (int i = 0,j=arr.length-1; i <ans.length; i++) {
+			ans[i]=arr[j];
+			j--;
 		}
 		return ans;
 	}
