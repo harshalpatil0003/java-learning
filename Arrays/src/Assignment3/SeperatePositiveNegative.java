@@ -12,7 +12,7 @@ public class SeperatePositiveNegative {
 //			seperate(arr);
 //		}
 		//System.out.println(Arrays.toString(seperate(arr)));
-		seperate2(arr);
+		System.out.println(Arrays.toString(seperate2(arr)));
 	}
 	public static int[] seperate(int[] arr) {
 		
@@ -28,7 +28,9 @@ public class SeperatePositiveNegative {
 		return arr;
 	}
 	
-	public static void seperate2(int[] arr){
+	// Another logic to find missing element
+	
+	public static int[] seperate2(int[] arr){
 		
 		int i=0, j=arr.length-1;
 		
@@ -37,7 +39,7 @@ public class SeperatePositiveNegative {
 			while(arr[i]<0) {
 				i++;
 			}
-			while(arr[i]>0) {
+			while(arr[j]>0) {
 				j--;
 			}
 			if (i<j) {
@@ -48,8 +50,6 @@ public class SeperatePositiveNegative {
 				j--;
 			}
 		}
-		for (int j2 = 0; j2 < arr.length; j2++) {
-			System.out.println(arr[j2]);
-		}
+		return arr;
 	}
 }
