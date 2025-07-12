@@ -11,9 +11,9 @@ public class AddElementAtLast {
 		System.out.print("Enter Element to add: ");
 		int ele= new Scanner(System.in).nextInt();
 		System.out.println(Arrays.toString(addElementToArray(arr,ele)));
-		//addElementToArray(arr,ele);
-		
+		//addElementToArray(arr,ele);	
 	}
+	// adding element at last of array
 	public static int[] addElementToArray(int[] arr, int ele) {
 		
 		int[] ans= new int[arr.length+1];
@@ -21,7 +21,6 @@ public class AddElementAtLast {
 		for (int i = 0; i < ans.length; i++) {
 			if (i<arr.length) {
 				ans[i]=arr[i];
-				//System.out.println(i);
 			}
 			else if (i>=arr.length) {
 				ans[i]=ele;
