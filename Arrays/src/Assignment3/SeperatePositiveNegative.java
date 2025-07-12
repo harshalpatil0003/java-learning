@@ -1,16 +1,18 @@
 package Assignment3;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class SeperatePositiveNegative {
 
 	public static void main(String[] args) {
 		int[] arr= {9,0,-3,1,-3,2,-2,-1,3,4,5,-7,6,0,-97,1,5,-69,4,-36,17,-100};
 		
-		for (int i = 0; i < arr.length; i++) {
-			seperate(arr);
-		}
-		System.out.println(Arrays.toString(seperate(arr)));
+//		for (int i = 0; i < arr.length; i++) {
+//			seperate(arr);
+//		}
+		//System.out.println(Arrays.toString(seperate(arr)));
+		seperate2(arr);
 	}
 	public static int[] seperate(int[] arr) {
 		
@@ -24,5 +26,30 @@ public class SeperatePositiveNegative {
 			}
 		}
 		return arr;
+	}
+	
+	public static void seperate2(int[] arr){
+		
+		int i=0, j=arr.length-1;
+		
+		while(i<j) {
+			
+			while(arr[i]<0) {
+				i++;
+			}
+			while(arr[i]>0) {
+				j--;
+			}
+			if (i<j) {
+				int temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+				i++;
+				j--;
+			}
+		}
+		for (int j2 = 0; j2 < arr.length; j2++) {
+			System.out.println(arr[j2]);
+		}
 	}
 }
