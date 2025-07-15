@@ -21,8 +21,8 @@ public class LeftShift {
 		int[] ans= new int[arr.length];
 		for (int i = 0; i < arr.length-1; i++) {
 			int temp=arr[i+1];
-		 arr[i+1]=arr[i];
-		 arr[i]=temp;
+			arr[i+1]=arr[i];
+		 	arr[i]=temp;
 		}
 		return arr;
 	}
