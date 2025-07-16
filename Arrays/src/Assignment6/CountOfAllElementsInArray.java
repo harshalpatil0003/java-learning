@@ -17,11 +17,11 @@ public class CountOfAllElementsInArray {
 		for (int i = 0; i < arr.length; i++) {
 			int ct=0;
 			
-			if (count[i]!=-1) {
+			if (count[i]!=-1)
+			{
 				
 				for (int j = i+1; j < arr.length; j++) {
 					if (arr[i]==arr[j]) {
-						
 						ct++;
 						count[j]=-1;
 					}

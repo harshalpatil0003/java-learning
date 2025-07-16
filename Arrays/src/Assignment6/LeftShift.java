@@ -12,9 +12,14 @@ public class LeftShift {
 		int n= new Scanner(System.in).nextInt();
 		
 		for (int i = 0; i <n; i++) {
-			leftShift(arr);
+			if (i!=0) {
+				leftShift(arr);
+			}
+			
+			
 		}
 		System.out.println(Arrays.toString(leftShift(arr)));
+		
 	}
 	// rotate  Array Anticlockwise
 	public static int[] leftShift(int[] arr) {
