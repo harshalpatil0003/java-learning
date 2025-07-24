@@ -22,7 +22,7 @@ public class EmployeeDB {
 		if (this.userName.equals(userName) && this.pass.equals(pass)) {
 			System.out.println("---------Login successfully! -----------");
 			connect=true;
-			System.out.println("    ****Database Connected!**** ");
+			System.out.println("     ****Database Connected!****  ");
 		}
 		else {
 			System.out.println("Invalid Credentials!");
@@ -110,39 +110,25 @@ public class EmployeeDB {
 			System.err.println("Couldn't resolve the connect identifier! ");
 		}
 	}
-	public void searchBySalary1(double salary){
+	public void searchBySalary(double salary, char oprtr){
 		if (connect) {
-			for (int i = 0; i < db.length; i++) {
-				if (db[i]!=null &&db[i].salary<2000.0) {
-					System.out.println(db[i]);
+			switch (oprtr) {
+			case '>': {
+				for (int i = 0; i < cnt; i++) {
+					if (db[i].salary>salary) {
+						System.out.println(db[i]);
+					}
 				}
+			}
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + oprtr);
 			}
 		}
 		else {
 			System.err.println("Couldn't resolve the connect identifier! ");
 		}
 	}
-	public void searchBySalary2(double salary) {
-		if (connect) {
-			for (int i = 0; i < db.length; i++) {
-				if (db[i]!=null && db[i].salary==2000.0) {
-					System.out.println(db[i]);
-				}
-			}
-		}
-		else {
-			System.err.println("Couldn't resolve the connect identifier! ");
-		}
-	}
-	public void searchBySalary3(double salary) {
-		if (connect) {
-			for (int i = 0; i < db.length; i++) {
-				if (db[i]!=null && db[i].salary>2000.0) {
-					System.out.println(db[i]);
-				}
-			}
-		}
-	}
+	
 		public void emplysUnderManager(int managrNo)
 		{
 			if (connect) 

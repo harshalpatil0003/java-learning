@@ -28,28 +28,10 @@ public class EmployeeDriver {
 		
 		//ref.searchByRole("Salesman");
 		//ref.searchByDeptNo(10);
-		System.out.println("I] See Salary ");
-		System.out.println("1: Salary less than 2000");
-		System.out.println("2: Salary equal to 2000");
-		System.out.println("3: Salary greater than 2000");
-
-		System.out.print("Enter option: ");
-		int opt= new Scanner(System.in).nextInt();
-		switch (opt) {
-		case 1: {
-			ref.searchBySalary1(0);
-			break;
-		}
-		case 2:{
-			ref.searchBySalary2(0);
-		}
-		case 3:{
-			ref.searchBySalary3(0);
-		}
-		default:
-		System.out.println("Unexpected value: " + opt);
-
-	}
+		
+		ref.searchBySalary(2000.0,'>');
+		
+		
 //		//ref.searchBySalary1(0);
 //		//ref.searchBySalary2(0);
 //		//ref.searchBySalary3(0);
