@@ -18,9 +18,6 @@ public class CommitRollBackDriver {
 		c1.addName("Nirmala");
 		c1.addName("Nirmala");
 		c1.commit();
-		c1.roleBack(5);
-		
-		
-		
+		c1.roleBack(5);	
 	}
 }
