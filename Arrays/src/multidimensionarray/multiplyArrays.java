@@ -1,7 +1,6 @@
 package multidimensionarray;
 
 import java.util.Arrays;
-import java.util.Iterator;
 
 public class multiplyArrays {
 
