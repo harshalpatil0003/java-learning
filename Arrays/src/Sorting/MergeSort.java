@@ -35,9 +35,6 @@ public class MergeSort {
         while (j <= end) {
             temp[k++] = arr[j++];
         }
-
-        for (int x = 0; x < temp.length; x++) {
-            arr[start + x] = temp[x];
-        }
-    }
+        arr=temp;
+    }	
 }
