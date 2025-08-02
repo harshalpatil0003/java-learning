@@ -15,6 +15,7 @@ public class ArrayOfUniueElements {
 		System.out.println(Arrays.toString(singleElements(arr)));
 		
 		System.out.println(Arrays.toString(repeated(arr)));
+		System.out.println(Arrays.toString(frequency(arr)));
 		
 	}
 	// method that finds the frequency of array elements.
