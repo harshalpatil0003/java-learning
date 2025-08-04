@@ -7,11 +7,12 @@ public class StringLength {
 	System.out.println(length(s));
 	}
 	public static int length(String s) {
-		int cnt=0;
+		int cnt=-1;
 		try {
 		for (int i = 0; ; i++) {
 			cnt++;
-			System.out.println(s.charAt(i));;
+			//System.out.println(s.charAt(i));
+			s.charAt(i);
 		}
 		}catch(StringIndexOutOfBoundsException ref) {
 			return cnt;
