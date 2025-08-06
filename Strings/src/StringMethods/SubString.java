@@ -9,7 +9,7 @@ public class SubString {
 	public static String subString(String s, int start, int end) {
 		
 		String ans="";
-		for (int i = start; i <end; i++) {
+		for (int i = start; i <=end; i++) {
 			ans+=s.charAt(i);
 		}
 		return ans;
