@@ -3,13 +3,11 @@ package StringMethods;
 public class Contains {
 
 	public static void main(String[] args) {
-		String s="aeroplateplane";
-		System.err.println(contains(s, "plane"));
-		System.out.println(contains2(s, "plane"));
-		
+		String s="ssspss";
+		System.err.println(contains(s, "sspss"));
+	//System.out.println(contains2(s, "plane"));	
 	}
 	public static boolean contains(String s, String t) {
-		
 		int check =0;
 		for (int i = 0; i < s.length(); i++) {
 			
@@ -18,7 +16,7 @@ public class Contains {
 			}
 			else {
 				if (check==t.length()){
-					System.out.println(check);
+					
 					return true;
 				}
 				else if(check>0){
@@ -30,7 +28,7 @@ public class Contains {
 		return check==t.length();
 		
 	}
-	// s= "Aeroplatplanplane" t="plane"
+	// s= "ssspss" t="sspss"
 	public static boolean contains2(String s,String t) {
 		
 		for (int i = 0; i < s.length(); i++) {
@@ -39,12 +37,12 @@ public class Contains {
 				
 				int j=0 ,k=i;
 				while (j<t.length()) {
-					if (s.charAt(k)!=t.charAt(j)) {
-						break;
-					}
-					else {
+					if (s.charAt(k)==t.charAt(j)) {
 						j++;
 						k++;
+					}
+					else {
+						break;
 					}
 					if (j==t.length()) {
 						return true;

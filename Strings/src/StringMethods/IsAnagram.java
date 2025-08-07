@@ -6,8 +6,8 @@ import java.util.Iterator;
 public class IsAnagram {
 
 	public static void main(String[] args) {
-		String s1="Elegant man".toLowerCase();
-		String s2="A gentleman".toLowerCase();
+		String s1="Elegant maneee";
+		String s2="A gentlemaneee";
 		//System.out.println(isAnagram(s1,s2));
 		System.out.println(isAnagram2(s1, s2));
 		
@@ -45,8 +45,9 @@ public class IsAnagram {
 					ar1[s2.charAt(i)]++;
 				
 			}
+			System.out.println(Arrays.toString(ar1));
 			for (int i = 0; i < ar1.length; i++) {
-				if (ar1[i]==2) {
+				if (ar1[i]!=0) {
 					return true;
 				}
 			}
