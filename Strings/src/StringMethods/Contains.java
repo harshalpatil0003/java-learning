@@ -26,7 +26,6 @@ public class Contains {
 			}
 		}
 		return check==t.length();
-		
 	}
 	// s= "ssspss" t="sspss"
 	public static boolean contains2(String s,String t) {
