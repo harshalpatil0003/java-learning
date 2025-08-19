@@ -5,12 +5,13 @@ import java.util.Arrays;
 public class IsomorphicStrings {
 
 	public static void main(String[] args) {
-		String s1="turtle";
-		String s2="tletur";
+		String s1="xxy";
+		String s2="aab";
 		System.out.println((isIsomorphic(s1, s2))?("Isomorphic"):("Not Isomorphic"));
 		//System.out.println(Arrays.toString(freq(s1)));	
 		//System.out.println(Arrays.toString(freq(s1)));
 		//System.out.println(Arrays.toString(freq(s2)));
+		//System.out.println(Arrays.toString(toCharArray1(s1)));
 	}
 	public static boolean isIsomorphic (String s1, String s2) {
 		
@@ -35,7 +36,7 @@ public class IsomorphicStrings {
 	}
 	public static int[] freq(String s1) {
 		
-		char[] ch= s1.toCharArray();
+		char[] ch= toCharArray1(s1);
 		//System.out.println(Arrays.toString(ch));
 		int[] freq= new int[s1.length()];
 		int cnt=0;
@@ -54,5 +55,14 @@ public class IsomorphicStrings {
 			}
 		}
 	return freq;
+	}
+	
+	public static char[] toCharArray1(String s) {
+		
+		char[] ch= new char[s.length()];
+		for (int i = 0; i < s.length(); i++) {
+			ch[i]=s.charAt(i);
+		}
+		return ch;
 	}
 }
