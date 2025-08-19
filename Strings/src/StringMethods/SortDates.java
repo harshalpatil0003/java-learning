@@ -42,8 +42,6 @@ public class SortDates {
 		
 		return sortdates;
 	}
-	
-	
 	public static int[] sort(int[] arr) {
 		for (int j = 0; j < arr.length-1; j++) {
 			for (int k = 0; k < arr.length-1-j; k++) {
