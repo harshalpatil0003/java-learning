@@ -29,11 +29,11 @@ public class CountOfAllElementsInArray {
 				count[i]=ct;
 			}
 		}
-		for (int i = 0; i < count.length; i++) {
-			if (arr[i]>=0) {
-				System.out.println("Element "+arr[i]+" repeated "+i+ "times");
-			}
-		}
+//		for (int i = 0; i < count.length; i++) {
+//			if (arr[i]>=0) {
+//				System.out.println("Element "+arr[i]+" repeated "+i+ "times");
+//			}
+//		}
 		return count;
 		
 	}
