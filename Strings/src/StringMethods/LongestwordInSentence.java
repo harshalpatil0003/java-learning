@@ -3,7 +3,7 @@ package StringMethods;
 public class LongestwordInSentence {
 
 	public static void main(String[] args) {
-		String s="Iam like to learn encyclopedia";
+		String s="Iam like to read encyclopedia and wikipedia about Argentinosaurus";
 		System.out.println(longestString(s));
 	}
 	
