@@ -1,4 +1,4 @@
-package MusicPlayer;
+package Queue;
 
 import java.util.Arrays;
 

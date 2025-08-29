@@ -1,4 +1,5 @@
-package MusicPlayer;
+package Queue;
+
 
 import java.util.Objects;
 

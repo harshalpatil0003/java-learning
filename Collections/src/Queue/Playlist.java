@@ -1,4 +1,4 @@
-package MusicPlayer;
+package Queue;
 
 import java.util.Arrays;
 
@@ -10,8 +10,6 @@ public class Playlist {
 	private int cap;
 	private String name;
 	private Songs[] s;
-	
-	
 	
 	public Playlist() {
 		// TODO Auto-generated constructor stub
@@ -161,6 +159,4 @@ public class Playlist {
 		}
 		
 	}
-	
-	
 }
