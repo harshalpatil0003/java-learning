@@ -29,9 +29,10 @@ public class LinkedListDriver {
 		//System.out.println(l1.containsAll(l2));
 	   // l2.removeFirt();
 		//l2.removeLast();
-		System.out.println(l2);
+		//System.out.println(l2);
 		
-		System.out.println(l1);
+	//	System.out.println(l1);
+		System.out.println(l1.reverseIterate());
 		//System.out.println(l1.reatainAll(l2));
 		//System.out.println(l1.contains(600));
 		

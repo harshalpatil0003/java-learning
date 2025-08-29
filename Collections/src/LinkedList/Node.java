@@ -26,5 +26,6 @@ public class Node{
 	public boolean hasprev() {
 		return prevRef!=null;
 	}
+
 	
 }

@@ -199,8 +199,26 @@ public class LinkedList {
 		return false;
 	}
 	
-	public Node reverseIterate() {
+	public Node reverseIterator() {
 		return god;
+	}
+	
+	public String reverseIterate() {
+		if (god!=null) {
+			Node god=reverseIterator();
+			
+			StringBuilder s= new StringBuilder();
+			s=s.append("[");
+			while(god!=null) {
+				s=s.append(" "+god.val+",");
+				god=god.prev();
+			}
+			s=s.append("]");
+			s=s.deleteCharAt(s.length()-2);
+			return new String(s);
+			
+		}
+		return "[]";
 	}
 	
 	
