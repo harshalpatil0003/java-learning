@@ -1,7 +1,6 @@
 package com.example.Laptop.Entity;
 
 import jakarta.persistence.*;
-import org.springframework.context.annotation.EnableMBeanExport;
 
 @Entity
 @Table( name = "laptop_table")
@@ -61,11 +60,13 @@ public class Laptop {
     }
 
     public int getRam() {
+
         return ram;
     }
 
-    public void setRam(int ram) {
+    public int setRam(int ram) {
         this.ram = ram;
+        return ram;
     }
 
     public double getPrice() {

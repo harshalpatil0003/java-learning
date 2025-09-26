@@ -11,4 +11,6 @@ public interface LaptopDAO {
 //    public void updateRAM(int id);
     public void deletelaptop(int gen);
 
+    public void setRam(int id);
+    public Laptop fetchByImei(long imei);
 }
