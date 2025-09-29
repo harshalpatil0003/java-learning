@@ -9,7 +9,8 @@ public class Amazon {
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.get("https://amazon.com");
+		//driver.get("https://amazon.com");
+		driver.navigate().to("https://amazon.com");
 		Thread.sleep(10000);
 		driver.close();
 	}
