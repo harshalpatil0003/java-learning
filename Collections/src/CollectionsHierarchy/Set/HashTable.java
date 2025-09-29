@@ -29,6 +29,7 @@ public class HashTable {
 		
 		//t1.remove(2);    // removes element
 		//t1.clear(); //clears table
+		//t1.put(6,(Hashtable<Integer, String>) t1.clone()); // can accept collection
 		//System.out.println(t1.contains("Yellow")); // returns true or false is element present or not.
 		// System.out.println(t1.containsKey(2)); // conatains key true or false.
 		
