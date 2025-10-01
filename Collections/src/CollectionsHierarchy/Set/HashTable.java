@@ -1,5 +1,8 @@
 package CollectionsHierarchy.Set;
 
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Hashtable;
 import java.util.Iterator;
 public class HashTable {
@@ -10,10 +13,10 @@ public class HashTable {
 		s.put(1, new Student("Harshal", 01, 90f, 22));
 		s.put(2, new Student("Rohit", 02, 90f, 23));
 		s.put(3, new Student("Aditya", 03, 91.20f, 22));
-		s.put(4, new Student("Chaitanya", 04, 95f, 22));
+		s.put(5, new Student("Chaitanya", 04, 95f, 22));
 		s.put(5, new Student("Chaitanya", 04, 95f, 22));
 		//Iterator<Student> i= new Iterator<Student>();
-		
+		// Collections.sort(bottles);
 		System.out.println(s.toString());
 		
 		
@@ -39,7 +42,7 @@ public class HashTable {
 	}
 }
 
-class Student{
+class Student implements Comparable<Student>{
 	String name;
 	int id;
 	float perc;
@@ -61,7 +64,13 @@ public Student(String name, int id, float perc, int age) {
 	public String toString() {
 		return "[name=" + name + ", id=" + id + ", perc=" + perc + ", age=" + age+"]";
 	}
-
+	
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		return this.name.compareTo(o.name);
+	}
+	
 }
 
 
