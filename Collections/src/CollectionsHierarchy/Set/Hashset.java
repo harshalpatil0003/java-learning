@@ -1,6 +1,7 @@
 package CollectionsHierarchy.Set;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.TreeSet;
 public class Hashset {
 
 	public static void main(String[] args) {
@@ -13,20 +14,22 @@ public class Hashset {
 		b.add(new Bottle(4,"silver","steel",250));
 		b.add(new Bottle(2,"black","steel",100));
 		b.add(new Bottle(2,"black","steel",100));
-		Collections.sort(b);
-		System.out.println(b);
 		
-//		HashSet<String> s= new HashSet<String>();
-//		s.add("harshal");
-//		s.add("zeeshan");
-//		s.add("Iliana");
-//		s.add("Gibral");
-//		s.add("Ganesh");
-//		s.add("zeeshan");
-//		s.add("zeeshan");
+	//	System.out.println(b);
+		
+		HashSet<String> s= new HashSet<String>();
+		s.add("Harshal");
+		s.add("Zeeshan");
+		s.add("Iliana");
+		s.add("Gibral");
+		s.add("Ganesh");
+		s.add("Zeeshan");
+		s.add("Zeeshan");
 //		
-//		java.util.Collections.sort(s);
-//		System.out.println(s);
+		System.out.println(s);
+		TreeSet<Bottle> t = new TreeSet<Bottle>();
+		t.addAll(b);
+		System.out.println(t);
 	}
 	
 	
