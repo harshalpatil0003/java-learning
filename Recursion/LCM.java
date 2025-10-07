@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class LCM 
 {
-	public static void main(String[] args) 
+	private static void main(String[] args) 
 	{
 		System.out.print("Enter Number N1: ");
 		int num1=new Scanner(System.in).nextInt();
