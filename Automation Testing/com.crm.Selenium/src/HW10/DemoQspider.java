@@ -21,7 +21,6 @@ public class DemoQspider {
 		
 		dr.findElement(By.xpath("//ul[@class='pt-2 pe-1']/li[2]")).click();
 //		//dr.findElement(By.xpath("//section[text()='X Path']")).click();
-		
 		List<WebElement> inputs = dr.findElements(By.xpath("//ul[@class='mt-1 ps-3 pe-4']/li"));
 		
 		for (int i = 0; i < inputs.size(); i++) {

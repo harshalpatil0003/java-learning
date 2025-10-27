@@ -13,13 +13,13 @@ public class SelectDropDown {
 		WebDriver dr= new ChromeDriver();
 		dr.manage().window().maximize();
 		dr.get("file:///C:/Users/harsh/Downloads/demo.html");
-//		WebElement singleSelect = dr.findElement(By.id("standard_cars"));
+		WebElement singleSelect = dr.findElement(By.id("standard_cars"));
 		
 		
 		// single select
-//		Select sel= new Select(singleSelect);
-//		sel.selectByIndex(2);
-//		Thread.sleep(1000);
+		Select sel= new Select(singleSelect);
+		sel.selectByIndex(2);
+		Thread.sleep(1000);
 //		
 //		sel.selectByVisibleText("Nissan");
 //		Thread.sleep(1000);
@@ -29,27 +29,23 @@ public class SelectDropDown {
 		
 		//select Multiple select 
 		
-		WebElement multiSelect = dr.findElement(By.id("multiple_cars"));
-		Select sel= new Select(multiSelect);
-		sel.selectByIndex(1);
-		Thread.sleep(1000);
-		
-		sel.selectByVisibleText("BMW");
-		Thread.sleep(1000);
-		
-		sel.selectByValue("lr");
-		Thread.sleep(2000);
+//		WebElement multiSelect = dr.findElement(By.id("multiple_cars"));
+//		Select sel= new Select(multiSelect);
+//		sel.selectByIndex(1);
+//		Thread.sleep(1000);
+//		
+//		sel.selectByVisibleText("BMW");
+//		Thread.sleep(1000);
+//		
+//		sel.selectByValue("lr");
+//		Thread.sleep(2000);
 		
 		
 		//deselect 
-		sel.deselectByVisibleText("BMW");
-		sel.deselectByValue("lr");
-		sel.deselectByIndex(2);
+//		sel.deselectByVisibleText("BMW");
+//		sel.deselectByValue("lr");
+//		sel.deselectByIndex(2);
 		sel.deselectAll();
-		
-		
-		
-		
 		dr.close();
 		
 		
