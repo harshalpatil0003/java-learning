@@ -1,7 +1,5 @@
 package Employee;
 
-import java.util.Scanner;
-
 public class EmployeeDriver {
 
 	public static void main(String[] args) {
@@ -24,12 +22,12 @@ public class EmployeeDriver {
 		ref.addEmployee("Jamie", 520, 169, 20, "Salesman", "22/05/1990", 2800.0, 0.0);
 		ref.addEmployee("Tyrion", 560, 170, 20, "Clerk", "22/05/1990", 1000.0, 0.0);
 		
-		//ref.showDb();
+	
 		
 		//ref.searchByRole("Salesman");
 		//ref.searchByDeptNo(10);
 		
-		ref.searchBySalary(2000.0,'>');
+		//ref.searchBySalary(2000.0,'>');
 		
 		
 //		//ref.searchBySalary1(0);
@@ -67,7 +65,8 @@ public class EmployeeDriver {
 //			//ref.empWithMaxSal(0.0);
 //			//ref.secMaxSalary(0.0);
 			
-			//ref.sortBy("emplId");
+//			ref.sortBy("Comm");
+//			ref.showDb();
 			
 		
 	}

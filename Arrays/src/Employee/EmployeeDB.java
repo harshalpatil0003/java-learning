@@ -1,5 +1,6 @@
 package Employee;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -238,7 +239,7 @@ public class EmployeeDB {
 		
 		public void sortBy(String opt) {
 			
-			if (opt=="emplId" || opt=="managrNo" || opt== "deptNo"|| opt=="salary") {
+			if (opt=="emplId" || opt=="managrNo" || opt== "deptNo"|| opt=="salary" || opt=="comm") {
 				
 				for (int i = 0; i <cnt-1; i++) {
 					for (int j = 0; j <cnt-1-i ; j++) {
@@ -287,5 +288,5 @@ public class EmployeeDB {
 			}
 			return 0;
 		}
-	
+
 }
