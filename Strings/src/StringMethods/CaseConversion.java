@@ -14,7 +14,7 @@ public class CaseConversion {
 		for (int i = 0; i < s.length(); i++) {
 			char ch=s.charAt(i);
 			if (ch>='a'&& ch<='z') {
-				ans=ans+(char)(ch-32);
+				ans+=(char)(ch-32);
 			}
 		}
 		return ans;

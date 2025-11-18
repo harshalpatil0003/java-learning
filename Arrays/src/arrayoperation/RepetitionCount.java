@@ -1,4 +1,4 @@
-package arrayoperation;
+ package arrayoperation;
 
 public class RepetitionCount {
 
@@ -12,7 +12,6 @@ public class RepetitionCount {
 		 for (int i = 0; i < arr.length; i++)
 		 {
 			if (arr[i] != oldEle) {
-				 oldEle = 0;
 				 for (int j = 0; j < arr.length; j++) {
 					if (arr[i] == arr[j]) {
 						count++;

@@ -8,8 +8,8 @@ public class IsAnagram {
 	public static void main(String[] args) {
 		String s1="Elegant maneee";
 		String s2="A gentlemaneee";
-		//System.out.println(isAnagram(s1,s2));
-		System.out.println(isAnagram2(s1, s2));
+		System.out.println(isAnagram(s1,s2));
+//		System.out.println(isAnagram2(s1, s2));
 		
 	}
 	public static boolean isAnagram(String s1, String s2) {

@@ -1,7 +1,5 @@
 package StringMethods;
 
-import java.util.Iterator;
-
 public class Trim {
 
 	public static void main(String[] args) {

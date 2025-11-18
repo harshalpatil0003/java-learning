@@ -3,7 +3,7 @@ package PracticeArrays;
 public class CheckIfArrayIsSorted {
 
 	public static void main(String[] args) {
-		int[] arr= {1,2,4,3};
+		int[] arr= {1,2,3};
 		System.err.println(isSorted(arr));
 	}
 	public static boolean isSorted(int[] arr) {

@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	int[] arr= {0,1,2,3,5,7,11,13,17,17,2,6,8,10,12,5};
 	primeCount(arr);
 }
-public static void primeCount(int[] arr) {
+    public static void primeCount(int[] arr) {
 	int count=0;
 	
 	
